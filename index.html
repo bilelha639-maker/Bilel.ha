@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#120d1d">
+<title>حاجة صغيرة ليك يا آية ❤️</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;width:100%;height:100%;font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+  body{
+    overflow:hidden;color:#fff;
+    background:
+      radial-gradient(circle at 20% 15%,rgba(255,92,143,.20),transparent 30%),
+      radial-gradient(circle at 85% 80%,rgba(144,88,255,.20),transparent 32%),
+      linear-gradient(145deg,#0c0912,#191020 52%,#0b0810);
+  }
+  .app{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:18px}
+  .glow{position:absolute;border-radius:50%;filter:blur(35px);opacity:.35;pointer-events:none}
+  .g1{width:180px;height:180px;background:#ff3f7f;top:-50px;right:-50px}
+  .g2{width:170px;height:170px;background:#7d45ff;bottom:-55px;left:-45px}
+  .phone{
+    position:relative;width:min(430px,100%);height:min(820px,94vh);
+    min-height:590px;border:1px solid rgba(255,255,255,.13);
+    border-radius:34px;overflow:hidden;
+    background:rgba(18,13,27,.72);backdrop-filter:blur(18px);
+    box-shadow:0 25px 80px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.08);
+  }
+  .topbar{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;color:rgba(255,255,255,.72);font-size:12px}
+  .brand{font-weight:700;letter-spacing:.5px}
+  .counter{padding:7px 11px;border-radius:20px;background:rgba(255,255,255,.07)}
+  .progress{height:3px;margin:0 22px;background:rgba(255,255,255,.07);border-radius:10px;overflow:hidden}
+  .bar{height:100%;width:0;background:linear-gradient(90deg,#ff5c91,#a66cff);border-radius:10px;transition:width .55s ease}
+  .screen{height:calc(100% - 65px);padding:25px 24px 28px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+  .step{display:none;animation:in .55s ease both}
+  .step.active{display:block}
+  @keyframes in{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+  .emoji{font-size:48px;filter:drop-shadow(0 8px 20px rgba(255,65,120,.25));margin-bottom:13px}
+  h1{font-size:29px;margin:0 0 14px;font-weight:800}
+  .text{font-size:17px;line-height:2;color:rgba(255,255,255,.88);margin:0 auto;max-width:350px}
+  .highlight{color:#ff8fb3;font-weight:700}
+  .btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  button{
+    border:0;color:white;font-size:16px;font-weight:750;cursor:pointer;
+    border-radius:17px;padding:14px 22px;min-width:145px;
+    background:linear-gradient(135deg,#ff4f89,#b45cff);
+    box-shadow:0 10px 25px rgba(255,70,130,.20);
+    transition:transform .15s ease,filter .15s ease,box-shadow .15s ease;
+  }
+  button:active{transform:scale(.95)}
+  button:hover{filter:brightness(1.08);box-shadow:0 13px 30px rgba(255,70,130,.28)}
+  .secondary{background:rgba(255,255,255,.075);box-shadow:none;border:1px solid rgba(255,255,255,.10)}
+  .tiny{font-size:12px;color:rgba(255,255,255,.45);margin-top:15px}
+  .heart{
+    position:absolute;bottom:-30px;font-size:18px;opacity:0;
+    animation:float 8s linear infinite;pointer-events:none;
+  }
+  @keyframes float{
+    0%{transform:translateY(0) rotate(0deg);opacity:0}
+    12%{opacity:.6} 100%{transform:translateY(-900px) rotate(25deg);opacity:0}
+  }
+  .intro{
+    position:absolute;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;
+    padding:30px;text-align:center;background:
+    radial-gradient(circle at 50% 35%,rgba(255,71,130,.18),transparent 36%),
+    rgba(10,7,15,.97);transition:opacity .6s ease,transform .6s ease;
+  }
+  .intro.hide{opacity:0;transform:scale(1.05);pointer-events:none}
+  .introbox{max-width:330px}
+  .introheart{font-size:68px;animation:pulse 1.7s infinite}
+  @keyframes pulse{50%{transform:scale(1.12)}}
+  .intro h2{font-size:28px;margin:8px 0}
+  .intro p{color:rgba(255,255,255,.62);line-height:1.8}
+  .start{margin-top:15px}
+  .no-mode{
+    background:
+      radial-gradient(circle at 30% 20%,rgba(130,130,130,.10),transparent 30%),
+      linear-gradient(145deg,#111,#1b1b1b 60%,#0d0d0d)!important;
+  }
+  .no-mode .phone{filter:grayscale(.75)}
+  .no-mode .bar{background:#777}
+  .shake{animation:shake .45s ease}
+  @keyframes shake{20%{transform:translateX(7px)}40%{transform:translateX(-7px)}60%{transform:translateX(5px)}80%{transform:translateX(-4px)}}
+  .signature{margin-top:25px;color:rgba(255,255,255,.45);font-size:12px}
+  @media(max-height:680px){.phone{min-height:560px;height:96vh}.screen{padding-top:15px}.emoji{font-size:40px}h1{font-size:25px}.text{font-size:15px}.btns{margin-top:20px}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="glow g1"></div><div class="glow g2"></div>
+
+  <div class="phone" id="phone">
+    <div class="topbar">
+      <div class="brand">حاجة صغيرة ليك ✨</div>
+      <div class="counter" id="counter">1 / 4</div>
+    </div>
+    <div class="progress"><div class="bar" id="bar"></div></div>
+
+    <main class="screen">
+      <section class="step active" data-step="1">
+        <div class="emoji">👋</div>
+        <h1>عسلامة آية ❤️</h1>
+        <p class="text">أنا بلال 😅 بصراحة عجبتني، قلت نبعثلك إنفيت… أما ما قبلتيش 😂<br>عاد إضغطي على <span class="highlight">OK</span> ونحكيلك علاش عملتلك الحكاية هاذي.</p>
+        <div class="btns"><button onclick="next()">OK ❤️</button></div>
+      </section>
+
+      <section class="step" data-step="2">
+        <div class="emoji">💻</div>
+        <h1>أنا programmeur 😌</h1>
+        <p class="text">قلت علاش لا؟ نعملك حاجة <span class="highlight">سبيسيال</span> شوية، مادامني programmeur 😌</p>
+        <div class="btns"><button onclick="next()">OK 👀</button></div>
+      </section>
+
+      <section class="step" data-step="3">
+        <div class="emoji">❤️</div>
+        <h1>بصراحة...</h1>
+        <p class="text">بصراحة؟ عجبتني برشا 😅<br>وكون جات فرصة نحكيو ديراكت، راني أكيد حكيت معاك… أما ضاهرلي بيناتنا شوية مسافة 😂</p>
+        <div class="btns"><button onclick="next()">إي ❤️</button></div>
+      </section>
+
+      <section class="step" data-step="4">
+        <div class="emoji">😌</div>
+        <h1>المهم...</h1>
+        <p class="text">المهم، كان تقبلي الإنفيت نزيدو نحكيو شوية ونتعارفو على رواحنا أكثر ❤️<br>وما نكذبش عليك، راني <span class="highlight">serieux</span> وراك عجبتني برشا 😌</p>
+        <div class="btns"><button onclick="next()">إي ❤️</button></div>
+      </section>
+
+      <section class="step" data-step="5">
+        <div class="emoji">💌</div>
+        <h1>آخر سؤال يا آية 😌</h1>
+        <p class="text">شنوة رأيك؟ تقبلي الإنفيت ونزيدو نحكيو ونتعارفو شوية؟ ❤️</p>
+        <div class="btns">
+          <button onclick="yes()">إي نقبل ❤️</button>
+          <button class="secondary" onclick="nope()">لا 😅</button>
+        </div>
+        <div class="tiny">طبيعي إنتي حرّة، ما ثماش حتى ضغط ❤️</div>
+      </section>
+
+      <section class="step" data-step="6">
+        <div class="emoji">🥹❤️</div>
+        <h1>يعطيك الصحة يا آية! ❤️</h1>
+        <p class="text">فرحتيني برشا ❤️<br>توّة نستنى فيك تقبلي الإنفيت ونشوفو وين توصل الحكاية 😌</p>
+        <div class="signature">— بلال</div>
+      </section>
+    </main>
+
+    <div id="hearts"></div>
+  </div>
+
+  <div class="intro" id="intro">
+    <div class="introbox">
+      <div class="introheart">💗</div>
+      <h2>عندي حاجة صغيرة ليك يا آية ❤️</h2>
+      <p>دقيقة برك… كمّليها للآخر، وبعدها إنتي قرّري 😌</p>
+      <button class="start" onclick="start()">إضغطي باش نبدأو ✨</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let current=1, started=false, audioCtx=null;
+
+function beep(freq=650,duration=.08){
+  if(!audioCtx) return;
+  const o=audioCtx.createOscillator(), g=audioCtx.createGain();
+  o.type="sine"; o.frequency.value=freq;
+  g.gain.setValueAtTime(.0001,audioCtx.currentTime);
+  g.gain.exponentialRampToValueAtTime(.045,audioCtx.currentTime+.01);
+  g.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+duration);
+  o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+duration+.02);
+}
+function start(){
+  started=true;
+  audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  beep(740,.10);
+  document.getElementById("intro").classList.add("hide");
+  update();
+}
+function next(){
+  if(!started) return;
+  beep(620,.07);
+  current++;
+  update();
+}
+function update(){
+  document.querySelectorAll(".step").forEach(s=>s.classList.remove("active"));
+  const target=document.querySelector(`[data-step="${current}"]`);
+  if(target) target.classList.add("active");
+  const shown=Math.min(current,5);
+  document.getElementById("counter").textContent = current<=5 ? `${shown} / 5` : "✓";
+  document.getElementById("bar").style.width = `${Math.min((shown/5)*100,100)}%`;
+}
+function yes(){
+  beep(880,.10); setTimeout(()=>beep(1100,.12),100);
+  current=6; update(); burst();
+}
+function nope(){
+  beep(220,.14);
+  document.body.classList.add("no-mode");
+  document.getElementById("phone").classList.add("shake");
+  setTimeout(()=>document.getElementById("phone").classList.remove("shake"),500);
+  document.querySelector('[data-step="5"] .emoji').textContent="😂";
+  document.querySelector('[data-step="5"] h1').textContent="أوكي آية 😂";
+  document.querySelector('[data-step="5"] .text').innerHTML=
+    "يا آية ثبتّيهالي عليّا 😂<br>أما عادي، نحترم الـ«لا» متاعك ❤️<br>أما بصراحة وجعتني شوية 😭😂";
+  document.querySelector('[data-step="5"] .btns').innerHTML=
+    '<button class="secondary" onclick="location.reload()">نعاودو؟ 😂</button>';
+  document.querySelector('[data-step="5"] .tiny').textContent="المهم وصلتك الفكرة والميساج ❤️";
+}
+function burst(){
+  for(let i=0;i<22;i++){
+    const h=document.createElement("div");h.className="heart";
+    h.textContent=["❤️","💗","💕","✨"][Math.floor(Math.random()*4)];
+    h.style.left=(5+Math.random()*90)+"%";
+    h.style.animationDuration=(4+Math.random()*4)+"s";
+    h.style.animationDelay=(Math.random()*.6)+"s";
+    h.style.fontSize=(14+Math.random()*18)+"px";
+    document.getElementById("hearts").appendChild(h);
+    setTimeout(()=>h.remove(),9000);
+  }
+}
+setInterval(()=>{
+  if(!started) return;
+  const h=document.createElement("div");h.className="heart";
+  h.textContent="♥";h.style.left=Math.random()*100+"%";
+  h.style.animationDuration=(7+Math.random()*4)+"s";
+  document.getElementById("hearts").appendChild(h);
+  setTimeout(()=>h.remove(),11000);
+},900);
+</script>
+</body>
+</html>
